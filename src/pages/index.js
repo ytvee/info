@@ -1,19 +1,16 @@
 import * as React from "react";
-import AppHeader from "../components/AppHeader";
 import DefaultLayout from "../layouts/DefaultLayout";
+import { pageLabels } from "../components/AppHeader/meta";
 import "./style.css";
 
 const IndexPage = () => {
   return (
-    <div className="app">
-      {/* <AppHeader /> */}
-      <DefaultLayout>
-        <p>hello</p>
-      </DefaultLayout>
-    </div>
+    <DefaultLayout>
+      <main>MAIN PAGE</main>
+    </DefaultLayout>
   )
 }
 
 export default IndexPage;
 
-export const Head = () => <title>YT Blog</title>
+export const Head = () => <title>{pageLabels.BLOG}</title>

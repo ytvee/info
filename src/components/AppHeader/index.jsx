@@ -1,41 +1,27 @@
 import * as React from "react";
 import ThemeSwitch from "../ThemeSwitch";
 import { Link } from "gatsby";
+import { pages } from "./meta";
 import "./style.css";
 
-const pages = [
-    {
-        id: "",
-        label: "Блог",
-    },
-    {
-        id: "projects",
-        label: "Проекты",
-
-    },
-    {
-        id: "about",
-        label: "Об авторе",
-
-    },
-    {
-        id: "contacts",
-        label: "Контакты и медиа",
-
-    },
-];
-
-const AppHeader = () => {
+const AppHeader = ({setAppTheme}) => {
     return (
-        <div className="header">
-            <div className={`logo-container`} >YT VEE</div>
-            <div className="nav-container">
+        <header className="header">
+            <div className={`logo-container`}>YT VEE</div>
+            <ul className="nav-container">
                 {pages.map((page) => (
-                    <Link to={`/${page.id}`} className="nav-item">{page.label}</Link>
+                    <li className={`nav-item`} key={page.id}>
+                        <Link
+                            to={`/${page.path}`}
+                            className={`nav-item-link`}
+                        >
+                            {page.label}
+                        </Link>
+                    </li>
                 ))}
-                <ThemeSwitch />
-            </div>
-        </div>
+                <ThemeSwitch setAppTheme={setAppTheme} />
+            </ul>
+        </header>
     );
 };
 

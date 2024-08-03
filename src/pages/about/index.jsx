@@ -1,5 +1,6 @@
 import * as React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
+import { pageLabels } from "../../components/AppHeader/meta";
 
 const AboutPage = () => {
   return (
@@ -11,4 +12,4 @@ const AboutPage = () => {
 
 export default AboutPage;
 
-export const Head = () => <title>About YT</title>
+export const Head = () => <title>{pageLabels.ABOUT}</title>

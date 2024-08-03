@@ -1,14 +1,16 @@
 import * as React from "react";
 import "./style.css";
 
-const ThemeSwitch = () => {
+const ThemeSwitch = ({setAppTheme}) => {
     const [currentTheme, setCurrentTheme] = React.useState("light");
 
     const themeToggle = () => {
         if (currentTheme === "light") {
-            return setCurrentTheme("dark");
+            setCurrentTheme("dark");
+            return setAppTheme("dark");
         }
-        return setCurrentTheme("light");
+        setCurrentTheme("light");
+        return setAppTheme("light");
     }
 
     const SunIcon = () => {

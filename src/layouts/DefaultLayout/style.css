@@ -1,0 +1,8 @@
+/* TODO: сделать на всю высоту */
+.container {
+    height: 100%;
+}
+
+.default-layout {
+    padding: 32px;
+}

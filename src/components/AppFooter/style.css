@@ -1,0 +1,28 @@
+footer {
+    height: 85px;
+    padding: 0 0 30px 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-container {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-information, .footer-links a, .footer-links a:visited {
+    text-decoration: none;
+    font-size: var(--default-text-size);
+    color: var(--text-color);
+}
+
+.footer-links a:hover {
+    color: var(--primary-text-color);
+}
+
+.footer-links a:active {
+    color: var(--focus-color);
+}
+
+
