@@ -6,7 +6,6 @@ import "./style.css";
 const IndexPage = () => {
   return (
     <div className="app">
-      {/* <AppHeader /> */}
       <DefaultLayout>
         <p>hello</p>
       </DefaultLayout>
