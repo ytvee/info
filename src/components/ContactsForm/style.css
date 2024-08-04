@@ -33,6 +33,10 @@
     color: var(--secondary-text-color);
 }
 
+.contacts-clickable-text {
+    font-size: var(--small-text-size);
+}
+
 .link {
     text-decoration: underline;
 }

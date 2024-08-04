@@ -17,8 +17,12 @@
     --button-text-color: #fff;
 
     --default-text-size: 20px;
+    --medium-text-size: 18px;
+    --small-text-size: 14px;
+
     --default-label-size: 16px;
     --default-title-size: 48px;
+    --default-sub-title-size: 24px;
     --default-transition: 0.3s;
 }
 

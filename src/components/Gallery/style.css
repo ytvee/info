@@ -1,0 +1,26 @@
+.gallery-container {
+    /* padding: 0 112px; */
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* @media (max-width: 740px) {
+    .gallery-container {
+        padding: 32px;
+    }
+} */
+
+.gallery-title {
+    min-width: 265px;
+    font-size: var(--default-sub-title-size);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.gallery-content {
+    min-width: 265px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

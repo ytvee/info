@@ -1,9 +1,8 @@
 import * as React from "react";
-import ThemeSwitch from "../ThemeSwitch";
-import { Link } from "gatsby";
-import { pages } from "./meta";
 import { socialLinks } from "./meta";
 import "./style.css";
+
+//TODO: почистить проект
 
 const AppFooter = () => {
     return (
