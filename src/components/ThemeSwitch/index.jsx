@@ -2,31 +2,30 @@ import * as React from "react";
 import spriteList from "../../assets/Sprites";
 import "./style.css";
 
-const ThemeSwitch = ({ setAppTheme }) => {
-    const themeFromLocalStorage = window.localStorage.getItem("theme");
-    const [currentTheme, setCurrentTheme] = React.useState(
-        themeFromLocalStorage || "light"
-    );
+export const theme = {
+    KEY: "theme",
+    LIGHT: "light",
+    DARK: "dark",
+};
 
+const ThemeSwitch = ({ appTheme, setAppTheme }) => {
     const themeToggle = () => {
-        if (currentTheme === "light") {
-            setCurrentTheme("dark");
-            window.localStorage.setItem("theme", "dark");
-            return setAppTheme("dark");
+        if (appTheme === theme.LIGHT) {
+            window.localStorage.setItem(theme.KEY, theme.DARK);
+            return setAppTheme(theme.DARK);
         }
-        setCurrentTheme("light");
-        window.localStorage.setItem("theme", "light");
-        return setAppTheme("light");
+        window.localStorage.setItem(theme.KEY, theme.LIGHT);
+        return setAppTheme(theme.LIGHT);
     };
 
     return (
         <div
-            class={`toggle-switch ${currentTheme}-container`}
+            class={`toggle-switch ${appTheme}-container`}
             onClick={themeToggle}
         >
-            <div className={`toggle ${currentTheme}`}></div>
-            {spriteList.sun}
+            <div className={`toggle ${appTheme}`}></div>
             {spriteList.moon}
+            {spriteList.sun}
         </div>
     );
 };

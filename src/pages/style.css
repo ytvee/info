@@ -12,6 +12,10 @@
     --text-color: #090D1F;
     --primary-text-color: #43508F;
     --secondary-text-color: #57618F;
+
+    --dark-background: #090D1F;
+    --light-background: #fff;
+    --palette-color: #090D1F;
     
     --focus-color: #57618F;
     --button-text-color: #fff;

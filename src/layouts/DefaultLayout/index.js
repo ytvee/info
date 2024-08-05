@@ -11,7 +11,7 @@ const DefaultLayout = ({ children }) => {
 
     return (
         <div className={`container ${appTheme}`}>
-            <AppHeader setAppTheme={setAppTheme} />
+            <AppHeader appTheme={appTheme} setAppTheme={setAppTheme} />
             <div className="default-layout">{children}</div>
             <AppFooter />
         </div>

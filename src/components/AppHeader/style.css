@@ -24,12 +24,10 @@
     font-size: var(--default-text-size);
     text-decoration: none;
     color: var(--text-color);
-    transition: var(--default-transition);
 }
 
 .nav-item:hover {
     text-decoration: underline;
-    transition: var(--default-transition);
 }
 
 .logo-container {

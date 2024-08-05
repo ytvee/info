@@ -1,9 +1,3 @@
-:root {
-    --dark-background: #090D1F;
-    --light-background: #fff;
-    --palette-color: var(--dark-background);
-}
-
 .dark-container {
     --palette-color: var(--light-background)
 }
@@ -44,6 +38,8 @@
 
 .dark {
     background-color: var(--dark-background);
+    stroke: var(--dark-background);
+    left: 16px;
 }
 
 .light {
