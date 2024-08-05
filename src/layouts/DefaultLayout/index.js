@@ -4,7 +4,10 @@ import AppFooter from "../../components/AppFooter";
 import "./style.css";
 
 const DefaultLayout = ({ children }) => {
-    const [appTheme, setAppTheme] = React.useState("light");
+    const themeFromLocalStorage = window.localStorage.getItem("theme");
+    const [appTheme, setAppTheme] = React.useState(
+        themeFromLocalStorage || "light"
+    );
 
     return (
         <div className={`container ${appTheme}`}>
