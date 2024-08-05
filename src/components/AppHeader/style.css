@@ -20,6 +20,18 @@
     align-items: center;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-container:hover {
+    text-shadow: 0px 0px 1px var(--primary-text-color);
+}
+
+.logo-link:active {
+    color: var(--primary-text-color);
+}
+
 .nav-item-link {
     font-size: var(--default-text-size);
     text-decoration: none;
@@ -28,6 +40,11 @@
 
 .nav-item:hover {
     text-decoration: underline;
+    color: var(--text-color);
+}
+
+.nav-item:active {
+    opacity: 0.5;
 }
 
 .logo-container {

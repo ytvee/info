@@ -8,22 +8,22 @@ export const pageLabels = {
 export const pages = [
     {
         id: "blog",
-        path: "",
+        path: "/",
         label: pageLabels.BLOG,
     },
     {
         id: "projects",
-        path: "projects",
+        path: "/projects",
         label: pageLabels.PROJECTS,
     },
     {
         id: "about",
-        path: "about",
+        path: "/about",
         label: pageLabels.ABOUT,
     },
     {
         id: "contacts",
-        path: "contacts",
+        path: "/contacts",
         label: pageLabels.CONTACTS,
     },
 ];
