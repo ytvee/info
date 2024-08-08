@@ -5,12 +5,6 @@
     gap: 32px;
 }
 
-/* @media (max-width: 740px) {
-    .gallery-container {
-        padding: 32px;
-    }
-} */
-
 .gallery-title {
     min-width: 265px;
     font-size: var(--default-sub-title-size);
@@ -22,5 +16,21 @@
     min-width: 265px;
     display: flex;
     flex-wrap: wrap;
+    gap: 32px;
     justify-content: space-between;
+}
+
+@media (max-width: 1025px) {
+    .gallery-title {
+        text-align: center;
+    }
+
+    .gallery-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.media-image {
+    width: 100%;
 }

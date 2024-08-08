@@ -1,6 +1,6 @@
 import * as React from "react";
-import ThemeSwitch from "../ThemeSwitch";
 import { Link } from "gatsby";
+import ThemeSwitch from "../ThemeSwitch";
 import { pages } from "./meta";
 import "./style.css";
 
@@ -8,7 +8,9 @@ const AppHeader = ({ appTheme, setAppTheme }) => {
     return (
         <header className="header">
             <div className={`logo-container`}>
-                <Link to={pages[0].path} className="logo-link">YT VEE</Link>
+                <Link to={pages[0].path} className="logo-link">
+                    YT VEE
+                </Link>
             </div>
             <ul className="nav-container">
                 {pages.map((page) => (

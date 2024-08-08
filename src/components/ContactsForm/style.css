@@ -56,9 +56,9 @@
 }
 
 .standard-button:hover {
-    background-color: var(--secondary-text-color);
+    background-color: var(--hover-text-color);
 }
 
 .standard-button:active {
-    background-color: var(--focus-color)
+    background-color: var(--focus-color);
 }

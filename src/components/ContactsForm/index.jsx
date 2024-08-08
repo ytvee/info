@@ -4,7 +4,7 @@ import "./style.css";
 
 const ContactsForm = () => {
     return (
-        <div class="contacts-container">
+        <div className="contacts-container">
             <div className="contacts-label">{description.LABEL}</div>
             <div className="contacts-title">{description.TITLE}</div>
             <div className="contacts-description">{description.TEXT}</div>
@@ -15,9 +15,9 @@ const ContactsForm = () => {
                     {cta.END_DESCRIPTION}
                 </div>
                 <a href={links.telegram} target="_blank">
-                <button className="standard-button">
-                    {cta.BUTTON_TEXT}
-                </button>
+                    <button className="standard-button">
+                        {cta.BUTTON_TEXT}
+                    </button>
                 </a>
             </div>
         </div>

@@ -1,23 +1,22 @@
 .gallery-item-container {
-    /* min-width: 285px; */
     width: 385px;
     margin-top: 12px;
 }
 
 @media (max-width: 740px) {
     .gallery-item-container {
-        width: 100%;;
+        width: 100%;
+        ;
     }
 }
 
 .item-title-container {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     gap: 16px;
     font-size: var(--default-sub-title-size);
     font-weight: 700;
-    /* white-space: nowrap; *
-    /* color: var(--text-color); */
 }
 
 .gallery-item-container a,

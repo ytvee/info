@@ -3,8 +3,6 @@ import DefaultLayout from "../layouts/DefaultLayout";
 import { pageLabels } from "../components/AppHeader/meta";
 import "./style.css";
 
-// TODO: адаптировать под мобилку
-// TODO: разобратьсяс с высотой экрана на разных экранах
 // TODO: сделать подсветку текущей страницы сайта
 
 const IndexPage = () => {

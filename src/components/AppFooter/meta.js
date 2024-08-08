@@ -2,7 +2,7 @@ export const links = {
     TELEGRAM: "https://t.me/ytvee",
     LINKEDIN: "https://www.linkedin.com/in/ytvee",
     GITHUB: "https://github.com/ytvee",
-}
+};
 
 export const socialLinks = [
     {
@@ -17,5 +17,4 @@ export const socialLinks = [
         label: "Github",
         link: links.GITHUB,
     },
-    
-]
+];

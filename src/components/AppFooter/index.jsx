@@ -2,15 +2,13 @@ import * as React from "react";
 import { socialLinks } from "./meta";
 import "./style.css";
 
-//TODO: почистить проект
-
 const AppFooter = () => {
     return (
-        <footer>
-            <div className="footer-container">
-                <div className="footer-information">© 2024</div>
+        <footer className="footer-container">
+            <div className="footer-information">© 2024</div>
+            <div className="footer-links-container">
                 {socialLinks.map((link) => (
-                    <div className="footer-links">
+                    <div id={link.link} className="footer-links">
                         <a href={link.link} target="_blank">
                             {link.label}
                         </a>

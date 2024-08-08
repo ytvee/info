@@ -1,12 +1,13 @@
 import * as React from "react";
 import AppHeader from "../../components/AppHeader";
 import AppFooter from "../../components/AppFooter";
+import { theme } from "../../components/ThemeSwitch";
 import "./style.css";
 
 const DefaultLayout = ({ children }) => {
-    const themeFromLocalStorage = window.localStorage.getItem("theme");
+    const themeFromLocalStorage = window.localStorage.getItem(theme.KEY);
     const [appTheme, setAppTheme] = React.useState(
-        themeFromLocalStorage || "light"
+        themeFromLocalStorage || theme.LIGHT
     );
 
     return (

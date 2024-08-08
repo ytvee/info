@@ -3,7 +3,7 @@ export const pageLabels = {
     PROJECTS: "Проекты",
     ABOUT: "Об авторе",
     CONTACTS: "Контакты и медиа",
-}
+};
 
 export const pages = [
     {

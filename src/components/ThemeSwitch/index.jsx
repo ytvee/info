@@ -20,7 +20,7 @@ const ThemeSwitch = ({ appTheme, setAppTheme }) => {
 
     return (
         <div
-            class={`toggle-switch ${appTheme}-container`}
+            className={`toggle-switch ${appTheme}-container`}
             onClick={themeToggle}
         >
             <div className={`toggle ${appTheme}`}></div>
