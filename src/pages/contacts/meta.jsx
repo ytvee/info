@@ -1,20 +1,20 @@
 export const posts = [
     {
-        title: "Цифровая зависимость у детей",
+        title: "Jasa Kids",
         description:
-            "Детская зависимость – это еще не трагедия, не болезнь. Ребенка не нужно лечить.",
-        link: "",
+            "Выступление с темой “IT в нашей жизни” детей из детских домов Казахстана. Город Алматы.",
+        link: "https://www.instagram.com/reel/CvZFO6TszAi",
     },
     {
         title: "Podcast",
         description:
             "О работе с детьми и подростками, своём пути, плюсах и минусах дополнительного образования.",
-        link: "",
+        link: "https://knowlegeisfreedom.mave.digital/ep-14",
     },
     {
-        title: "Jasa Kids",
+        title: "Цифровая зависимость у детей",
         description:
-            "Выступление с темой “IT в нашей жизни” детей из детских домов Казахстана. Город Алматы.",
-        link: "",
+            "Детская зависимость – это еще не трагедия, не болезнь. Ребенка не нужно лечить.",
+        link: "https://orda.kz/cifrovaja-zavisimost-u-detej-kak-poluchit-polzu-ot-vreda",
     },
 ];

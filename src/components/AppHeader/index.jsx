@@ -20,6 +20,11 @@ const AppHeader = ({ appTheme, setAppTheme }) => {
                 ))}
                 <ThemeSwitch appTheme={appTheme} setAppTheme={setAppTheme} />
             </ul>
+            <div className="hamburger">
+                <div className="hamburger-line"></div>
+                <div className="hamburger-line"></div>
+                <div className="hamburger-line"></div>
+            </div>
         </header>
     );
 };

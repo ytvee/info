@@ -1,6 +1,6 @@
 export const links = {
     TELEGRAM: "https://t.me/ytvee",
-    LINKEDIN: "https://ru.linkedin.com/",
+    LINKEDIN: "https://www.linkedin.com/in/ytvee",
     GITHUB: "https://github.com/ytvee",
 }
 

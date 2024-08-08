@@ -4,6 +4,12 @@
     margin-top: 12px;
 }
 
+@media (max-width: 740px) {
+    .gallery-item-container {
+        width: 100%;;
+    }
+}
+
 .item-title-container {
     display: flex;
     justify-content: space-between;
