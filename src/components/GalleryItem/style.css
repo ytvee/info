@@ -30,6 +30,7 @@
 .item-title-container:hover,
 .gallery-item-container a:hover {
     color: var(--secondary-text-color);
+    transition: 0s;
 }
 
 .item-description-container {
