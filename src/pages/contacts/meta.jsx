@@ -15,6 +15,6 @@ export const posts = [
         title: "Цифровая зависимость у детей",
         description:
             "Детская зависимость – это еще не трагедия, не болезнь. Ребенка не нужно лечить.",
-        link: "https://orda.kz/cifrovaja-zavisimost-u-detej-kak-poluchit-polzu-ot-vreda",
+        link: "https://orda.kz/cifrovaja-zavisimost-u-detej-kak-poluchit-polzu-ot-vreda/",
     },
 ];
