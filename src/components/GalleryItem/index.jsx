@@ -3,7 +3,6 @@ import spriteList from "../../assets/Sprites";
 import "./style.css";
 
 // TODO: добавить условие отрисовки <a> или <Link>
-// TODO: add key to all map-functions
 
 const GalleryItem = ({ title, description, link, children }) => {
     console.log("rendered");

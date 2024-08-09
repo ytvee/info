@@ -1,6 +1,5 @@
 import * as React from "react";
 import GalleryItem from "../GalleryItem";
-import { StaticImage } from "gatsby-plugin-image";
 import "./style.css";
 
 const Gallery = ({ title, posts }) => {
