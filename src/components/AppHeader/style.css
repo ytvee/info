@@ -35,6 +35,13 @@
         cursor: pointer;
     }
 
+    .hamburger:hover {
+        /* border-color: var(--primary-text-color); */
+        box-shadow: 0 0 9px var(--text-color);
+        border-radius: 50%;
+        /* background-color: var(--text-color); */
+    }
+
     .hamburger-line {
         height: 1px;
         width: 20px;

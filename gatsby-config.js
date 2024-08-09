@@ -3,8 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "YT Блог",
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Yevgeniy Tyan Blog",
+    description: "Гайды по программированию на JavaScript и Python. Образовательные статьи и ссылки.",
+    siteUrl: `https://www.ytvee.com`,
   },
   plugins: [
     "gatsby-plugin-image",

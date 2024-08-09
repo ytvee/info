@@ -4,6 +4,16 @@ import ThemeSwitch from "../ThemeSwitch";
 import { pages } from "./meta";
 import "./style.css";
 
+const HamburgerMenu = () => {
+    return (
+        <div className="hamburger">
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+        </div>
+    );
+};
+
 const AppHeader = ({ appTheme, setAppTheme }) => {
     return (
         <header className="header">
@@ -22,11 +32,7 @@ const AppHeader = ({ appTheme, setAppTheme }) => {
                 ))}
                 <ThemeSwitch appTheme={appTheme} setAppTheme={setAppTheme} />
             </ul>
-            <div className="hamburger">
-                <div className="hamburger-line"></div>
-                <div className="hamburger-line"></div>
-                <div className="hamburger-line"></div>
-            </div>
+            <HamburgerMenu />
         </header>
     );
 };

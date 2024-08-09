@@ -1,13 +1,14 @@
 import * as React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import { pageLabels } from "../../components/AppHeader/meta";
+import Seo from "../../components/seo";
 import "./style.css";
 
 const avaImagePath =
-    "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723159210/";
+    "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723193765/";
 const imageKeys = {
-    COLORED: "ava1_alv1z8",
-    GREY: "ava2_zdczlw",
+    COLORED: "ava1_o48kxf",
+    GREY: "ava2_xkrf7d",
 };
 
 const descriptionText =
@@ -101,6 +102,6 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export const Head = () => <Seo pageTitle={pageLabels.ABOUT} />;
 
-export const Head = () => <title>{pageLabels.ABOUT}</title>;
+export default AboutPage;

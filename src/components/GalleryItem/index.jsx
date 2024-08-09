@@ -4,14 +4,14 @@ import "./style.css";
 
 // TODO: добавить условие отрисовки <a> или <Link>
 
-const GalleryItem = ({ title, description, link, children }) => {
+const GalleryItem = ({ PostTitle, description, link, children }) => {
     console.log("rendered");
     return (
         <div className="gallery-item-container">
             <a href={link} target="_blank">
                 <div className="item-image-container">{children}</div>
                 <div className="item-title-container">
-                    {title}
+                    {PostTitle}
                     <div className="svg-container">{spriteList.arrowLink}</div>
                 </div>
             </a>
