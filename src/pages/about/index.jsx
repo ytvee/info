@@ -4,6 +4,8 @@ import { pageLabels } from "../../components/AppHeader/meta";
 import Seo from "../../components/seo";
 import "./style.css";
 
+// TODO: refactoring -> decomposition
+
 const avaImagePath =
     "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723193765/";
 const imageKeys = {
@@ -15,7 +17,7 @@ const descriptionText =
     "Мне нравится создавать структуры и удобные, красивые интерфейсы. Изучаю Web3 и нейросети. Помимо профессиональной деятельности занимаюсь музыкой, люблю катать на борде, играть в настолки и путешествовать.";
 
 const AboutPage = () => {
-    const [currentImage, setCurrentImage] = React.useState(imageKeys.COLORED);
+    const [currentImage, setCurrentImage] = React.useState(imageKeys.GREY);
 
     const avaImageToggle = () => {
         if (currentImage === imageKeys.COLORED) {
@@ -29,7 +31,7 @@ const AboutPage = () => {
             <div className="text about-page-big-title">Y. TYAN</div>
             <div className="about-page-image-container">
                 <img
-                    className="about-page-image"
+                    className="about-page-image post-img"
                     src={avaImagePath + currentImage + ".png"}
                     onClick={avaImageToggle}
                 />

@@ -5,7 +5,6 @@ import "./style.css";
 // TODO: добавить условие отрисовки <a> или <Link>
 
 const GalleryItem = ({ PostTitle, description, link, children }) => {
-    console.log("rendered");
     return (
         <div className="gallery-item-container">
             <a href={link} target="_blank">
@@ -16,7 +15,6 @@ const GalleryItem = ({ PostTitle, description, link, children }) => {
                 </div>
             </a>
             <div className="item-description-container">{description}</div>
-            {/* <div className="item-tags-container"></div> */}
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import DefaultLayout from "../layouts/DefaultLayout";
-import BlogGalleryItem from "../DEPRECATED/BlogGalleryItem";
+import BlogGalleryItem from "./BlogGalleryItem";
 import { pageLabels } from "../components/AppHeader/meta";
 import Seo from "../components/seo";
 import "./style.css";
@@ -16,6 +16,12 @@ import "./style.css";
 // TODO: убрать выделение некоторых текстов (заголовков постов, подзаголовков страниц)
 // TODO: добавить ховер фон цвет на посты
 // TODO: сделать новую цветовую палитру и перепроверить каждый элемент сайта --> то же самое с размером шрита
+
+export const isLastTwoPosts = (posts, post) => {
+    const index = post.indexOf(posts);
+    const length = posts.length;
+    return index >= length - 2;
+};
 
 const IndexPage = ({ data }) => {
     const postsLength = data.allMdx.nodes.length;
@@ -32,16 +38,35 @@ const IndexPage = ({ data }) => {
 
                 <div className="last-posts-gallery">
                     <div className="big-post-container">
-                        hello
+                        <BlogGalleryItem
+                            PostTitle={bigPost.frontmatter.title}
+                            description={bigPost.excerpt}
+                            date={bigPost.frontmatter.date}
+                        />
                     </div>
                     <div className="small-posts-container">
-                        hello
+                        {smallPosts.map((post) => (
+                            <BlogGalleryItem
+                                key={post.id}
+                                PostTitle={post.frontmatter.title}
+                                description={post.excerpt}
+                                date={post.frontmatter.date}
+                                orientation="horizontal"
+                            />
+                        ))}
                     </div>
                 </div>
 
-                <div className="blog-gallery">
-                    hello
-                </div>
+                {/* <div className="blog-gallery">
+                    {data.allMdx.nodes.map((node) => (
+                        <BlogGalleryItem
+                            key={node.id}
+                            PostTitle={node.frontmatter.title}
+                            description={node.excerpt}
+                            date={node.frontmatter.date}
+                        />
+                    ))}
+                </div> */}
             </main>
         </DefaultLayout>
     );

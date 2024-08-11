@@ -17,7 +17,7 @@ const Gallery = ({ GalleryTitle, posts }) => {
                     >
                         <div className="media-image-container">
                             <img
-                                className="media-image"
+                                className="media-image post-img"
                                 src={post.imagePath}
                                 alt={post.PostTitle}
                             />

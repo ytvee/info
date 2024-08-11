@@ -8,7 +8,7 @@ const AppFooter = () => {
             <div className="footer-information">© 2024</div>
             <div className="footer-links-container">
                 {socialLinks.map((link) => (
-                    <div id={link.link} className="footer-links">
+                    <div className="footer-links" key={link.link}>
                         <a href={link.link} target="_blank">
                             {link.label}
                         </a>
