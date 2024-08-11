@@ -1,6 +1,6 @@
 /**
- * @type {import('gatsby').GatsbyConfig}
- */
+* @type {import('gatsby').GatsbyConfig}
+*/
 module.exports = {
   siteMetadata: {
     title: "Yevgeniy Tyan Blog",
@@ -10,5 +10,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
   ],
 }
