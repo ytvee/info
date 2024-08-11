@@ -2,15 +2,15 @@ import * as React from "react";
 import GalleryItem from "../GalleryItem";
 import "./style.css";
 
-const Gallery = ({ GalleryTitle, posts }) => {
+const Gallery = ({ galleryTitle, posts }) => {
     return (
         <div className="gallery-container">
-            <div className="gallery-title">{GalleryTitle}</div>
+            <div className="gallery-title">{galleryTitle}</div>
             <div className="gallery-content">
                 {posts.map((post) => (
                     <GalleryItem
                         key={post.id}
-                        PostTitle={post.title}
+                        postTitle={post.title}
                         description={post.description}
                         link={post.link}
                         imagePath={post.id}

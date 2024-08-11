@@ -28,7 +28,6 @@
 .blog-gallery-item-container:hover {
     opacity: 0.85;
     box-shadow: 0 0 14px var(--secondary-text-color);
-    transition: 0.2s;
 }
 
 @media (max-width: 740px) {
@@ -62,7 +61,6 @@
 .item-title-container:hover,
 .blog-gallery-item-container a:hover {
     color: var(--secondary-text-color);
-    transition: 0s;
 }
 
 .blog-item-description-container {

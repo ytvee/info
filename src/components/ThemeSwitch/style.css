@@ -7,7 +7,7 @@
 }
 
 .toggle-switch {
-    background-color: var(--palette-color);
+    background-color: var(--toggle-background-color);
 }
 
 .toggle-switch {
@@ -30,7 +30,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: white;
+    background-color: #F2F2F2;
     border-radius: 50%;
     z-index: 10;
     cursor: pointer;

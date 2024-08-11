@@ -9,7 +9,7 @@
     min-width: 265px;
     font-size: var(--default-sub-title-size);
     font-weight: 700;
-    color: var(--text-color);
+    color: var(--title-post-color);
 }
 
 .gallery-content {

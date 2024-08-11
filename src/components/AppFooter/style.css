@@ -18,13 +18,14 @@
 .footer-links a:visited {
     text-decoration: none;
     font-size: var(--default-text-size);
-    color: var(--text-color);
+    color: var(--nav-item-color);
+    user-select: none;
 }
 
 .footer-links a:hover {
-    color: var(--primary-text-color);
+    color: var(--nav-item-hover-color);
 }
 
 .footer-links a:active {
-    color: var(--text-color);
+    color: var(--nav-item-active-color);
 }

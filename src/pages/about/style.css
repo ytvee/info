@@ -1,7 +1,7 @@
 .about-page-big-title {
     width: 100%;
-    border-top: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
+    border-top: 1px solid var(--title-color);
+    border-bottom: 1px solid var(--title-color);
     text-align: center;
     font-size: 11vw;
     white-space: nowrap;
@@ -16,7 +16,7 @@
 
 .about-page-image {
     width: 100%;
-    border-bottom: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--title-color);
 }
 
 .about-page-description-container {
@@ -40,7 +40,7 @@
 }
 
 .about-page-description-text {
-    color: var(--secondary-text-color);
+    color: var(--post-text-color);
     line-height: 1.7;
 }
 

@@ -13,7 +13,7 @@ const ContactPage = () => {
             <div className="contacts-blocks">
                 <ContactsForm />
                 <Gallery
-                    GalleryTitle={"Медиа-проекты с моим участием"}
+                    galleryTitle={"Медиа-проекты с моим участием"}
                     posts={posts}
                 />
             </div>
