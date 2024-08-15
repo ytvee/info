@@ -1,9 +1,11 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import DefaultLayout from "../layouts/DefaultLayout";
-import BlogGalleryItem from "../DEPRECATED/BlogGalleryItem";
+import GalleryItem from "../components/GalleryItem";
 import { pageLabels } from "../components/AppHeader/meta";
 import Seo from "../components/seo";
+import BigPost from "../components/BigPost";
+import SmallPost from "../components/SmallPost";
 import "./style.css";
 
 // TODO: сделать подсветку текущей страницы сайта в навигации
@@ -27,22 +29,50 @@ const IndexPage = ({ data }) => {
         data.allMdx.nodes[postsLength - 3],
     ];
 
+    const LastPostsGallery = () => {
+        return (
+            <div className="last-posts-gallery">
+                <BigPost
+                    imageName={"image"}
+                    date={bigPost.frontmatter.date}
+                    title={bigPost.frontmatter.title}
+                    description={bigPost.excerpt}
+                    link={"link to post here"}
+                />
+                <div className="small-posts-container">
+                    {smallPosts.map((post) => (
+                        <SmallPost
+                            key={post.id}
+                            imageName={"image"}
+                            date={post.frontmatter.date}
+                            title={post.frontmatter.title}
+                            description={post.excerpt}
+                            link={"link to post here"}
+                        />
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
     return (
         <DefaultLayout>
             <main className="blog-container">
                 <div className="text blog-page-big-title">Б Л О Г</div>
-
-                <div className="last-posts-gallery">
-                    <div className="big-post-container">
-                        hello
-                    </div>
-                    <div className="small-posts-container">
-                        hello
-                    </div>
-                </div>
-
+                <div className="text blog-page-sub-title">ПОСЛЕДНИЕ ПОСТЫ</div>
+                <LastPostsGallery />
+                <div className="text blog-page-sub-title">ВСЕ ПОСТЫ</div>
                 <div className="blog-gallery">
-                    hello
+                    {data.allMdx.nodes.map((node) => (
+                        <GalleryItem
+                            key={node.id}
+                            postTitle={node.frontmatter.title}
+                            description={node.excerpt}
+                            link={`/blog/${node.frontmatter.slug}`}
+                            date={node.frontmatter.date}
+                            target={`_self`}
+                        />
+                    ))}
                 </div>
             </main>
         </DefaultLayout>
@@ -50,12 +80,13 @@ const IndexPage = ({ data }) => {
 };
 
 export const query = graphql`
-    query PostQuery {
+    query {
         allMdx(sort: { frontmatter: { date: DESC } }) {
             nodes {
                 frontmatter {
-                    date(formatString: "MMMM D, YYYY")
+                    date(formatString: "MM D, YYYY")
                     title
+                    slug
                 }
                 id
                 excerpt

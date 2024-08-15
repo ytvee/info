@@ -58,6 +58,11 @@
     white-space: wrap;
 }
 
+.item-title-container {
+    display: flex;
+    align-items: flex-start;
+}
+
 .item-title-container:hover,
 .blog-gallery-item-container a:hover {
     color: var(--secondary-text-color);

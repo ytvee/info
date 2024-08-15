@@ -3,6 +3,15 @@ import { description, cta, links } from "./meta";
 import "./style.css";
 
 const ContactsForm = () => {
+    const [isCopied, setIsCopied] = React.useState(false);
+
+    const copyLink = () => {
+        navigator.clipboard
+            .writeText(cta.CONTACT_LINK)
+            .then(() => setIsCopied(true));
+        window.setTimeout(() => setIsCopied(false), 500);
+    }
+
     return (
         <div className="contacts-container">
             <div className="contacts-label">{description.LABEL}</div>
@@ -10,8 +19,11 @@ const ContactsForm = () => {
             <div className="contacts-description">{description.TEXT}</div>
             <div className="contacts-clickable-block">
                 <div className="contacts-clickable-text">
+                    <div className={`tooltip ${isCopied && "copied"}`}>
+                        Скопировано!
+                    </div>
                     {cta.START_DESCRIPTION}
-                    <span className="link">{cta.CONTACT_LINK}</span>
+                    <span className="link" onClick={copyLink}>{cta.CONTACT_LINK}</span>
                     {cta.END_DESCRIPTION}
                 </div>
                 <a href={links.telegram} target="_blank">

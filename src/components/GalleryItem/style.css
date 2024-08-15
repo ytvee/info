@@ -1,5 +1,6 @@
 .gallery-item-container {
-    width: 385px;
+    width: 365px;
+    max-height: 400px;
     padding: 10px;
     margin-top: 12px;
     border: 2px solid var(--title-color);
@@ -48,10 +49,15 @@
 .svg-container {
     width: 24px;
     height: 28px;
-    
-    align-self: flex-end;
+    margin-top: 2px;
 }
 
 .svg-container svg {
     stroke: var(--text-color);
+}
+
+.item-date-container {
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 600;
 }
