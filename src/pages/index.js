@@ -2,10 +2,10 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import DefaultLayout from "../layouts/DefaultLayout";
 import GalleryItem from "../components/GalleryItem";
-import { pageLabels } from "../components/AppHeader/meta";
-import Seo from "../components/seo";
 import BigPost from "../components/BigPost";
 import SmallPost from "../components/SmallPost";
+import { pageLabels } from "../components/AppHeader/meta";
+import Seo from "../components/seo";
 import "./style.css";
 
 // TODO: сделать подсветку текущей страницы сайта в навигации
@@ -58,10 +58,14 @@ const IndexPage = ({ data }) => {
     return (
         <DefaultLayout>
             <main className="blog-container">
-                <div className="text blog-page-big-title">Б Л О Г</div>
-                <div className="text blog-page-sub-title">ПОСЛЕДНИЕ ПОСТЫ</div>
+                <div className="title blog-page-big-title">Б Л О Г</div>
+                <div className="subtitle blog-page-sub-title">
+                    ПОСЛЕДНИЕ ПОСТЫ
+                </div>
                 <LastPostsGallery />
-                <div className="text blog-page-sub-title">ВСЕ ПОСТЫ</div>
+                <div className="subtitle blog-page-sub-title">
+                    ВСЕ ПОСТЫ
+                </div>
                 <div className="blog-gallery">
                     {data.allMdx.nodes.map((node) => (
                         <GalleryItem

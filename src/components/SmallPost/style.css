@@ -1,16 +1,15 @@
 .small-posts-container {
-    /* border: 1px solid purple; */
-    max-width: 660px;
+    max-width: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 45px;
 }
 
-.small-post-container * {
-    /* border: 1px solid red; */
-    
-    /* padding: 2px; */
+@media (max-width: 1490px) {
+    .small-posts-container {
+        max-width: 100%;
+    }
 }
 
 .small-post-container {
@@ -42,4 +41,14 @@
 
 .small-post-title-container {
     margin-bottom: 8px;
+    font-family: var(--title-font-family);
+    font-size: var(--post-title-font-size);
+    font-weight: 600;
+}
+
+.small-post-description-container {
+    font-family: var(--text-font-family);
+    font-size: var(--post-text-font-size);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
 }

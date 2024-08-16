@@ -7,7 +7,7 @@
 }
 
 .toggle-switch {
-    background-color: var(--toggle-background-color);
+    background-color: var(--palette-color);
 }
 
 .toggle-switch {
@@ -37,11 +37,12 @@
 }
 
 .dark {
+    left: 16px;
     background-color: var(--dark-background);
     stroke: var(--dark-background);
-    left: 16px;
 }
 
 .light {
     left: 55px;
+    background-color: var(--light-background);
 }

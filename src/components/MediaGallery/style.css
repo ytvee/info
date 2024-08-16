@@ -7,9 +7,10 @@
 
 .gallery-title {
     min-width: 265px;
-    font-size: var(--default-sub-title-size);
-    font-weight: 700;
-    color: var(--title-post-color);
+    font-size: var(--subtitle-font-size);
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    color: var(--sub-title-color);
 }
 
 .gallery-content {

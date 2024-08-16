@@ -10,13 +10,13 @@ const GalleryItem = ({ postTitle, description, link, date = null, children = nul
                 <div className="item-image-container">
                     {children && children}
                 </div>
-                <div className="item-title-container">
+                <div className="title item-title-container">
                     {postTitle}
                     <div className="svg-container">{spriteList.arrowLink}</div>
                 </div>
             </a>
-            <div className="item-description-container">{cutText(description)}</div>
-            <div className="item-date-container">{date && ("Дата публикации: " + getDateName(date))}</div>
+            <div className="text item-description-container">{cutText(description)}</div>
+            <div className="subtitle item-date-container">{date && ("Дата: " + getDateName(date))}</div>
         </div>
     );
 };

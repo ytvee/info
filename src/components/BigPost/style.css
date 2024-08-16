@@ -1,18 +1,40 @@
 .big-post-container {
-    max-width: 600px;
+    max-width: 450px;
     width: 100%;
     padding: 25px 25px 30px 25px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     justify-self: flex-start;
+    transition: var(--flash-transition);
+}
+
+@media (max-width: 1490px) {
+    .big-post-container {
+        max-width: 100%;
+    }
 }
 
 .big-post-container:hover {
     opacity: 0.85;
-    box-shadow: 0 0 14px var(--sub-title-color);
+    box-shadow: 0 0 14px var(--post-hover-color);
+    transition: var(--flash-transition);
 }
 
 .big-post-image-container {
     margin-bottom: 20px;
 }
+
+.big-post-title-container {
+    font-family: var(--title-font-family);
+    font-size: var(--post-title-font-size);
+    font-weight: 600;
+}
+
+.big-post-description-container {
+    font-family: var(--text-font-family);
+    font-size: var(--post-text-font-size);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+

@@ -23,8 +23,9 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    font-size: var(--default-sub-title-size);
-    font-weight: 700;
+    font-family: var(--title-font-family);
+    font-size: var(--post-title-font-size);
+    font-weight: 600;
 }
 
 .gallery-item-container a,
@@ -38,6 +39,10 @@
 .item-description-container {
     color: var(--description-post-color);
     margin-top: 12px;
+    font-family: var(--text-font-family);
+    font-size: var(--post-text-font-size);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
 }
 
 .gallery-item-container:hover .svg-container svg,
@@ -53,11 +58,11 @@
 }
 
 .svg-container svg {
-    stroke: var(--text-color);
+    stroke: var(--title-post-color);
 }
 
 .item-date-container {
     padding-top: 15px;
     font-size: 12px;
-    font-weight: 600;
+    font-family: var(--text-font-family);
 }

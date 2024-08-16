@@ -2,7 +2,7 @@ import * as React from "react";
 import GalleryItem from "../GalleryItem";
 import "./style.css";
 
-const Gallery = ({ galleryTitle, posts }) => {
+const MediaGallery = ({ galleryTitle, posts }) => {
     return (
         <div className="gallery-container">
             <div className="gallery-title">{galleryTitle}</div>
@@ -29,4 +29,4 @@ const Gallery = ({ galleryTitle, posts }) => {
     );
 };
 
-export default Gallery;
+export default MediaGallery;

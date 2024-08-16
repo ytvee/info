@@ -28,7 +28,7 @@ const AboutPage = () => {
 
     return (
         <DefaultLayout>
-            <div className="text about-page-big-title">Y. TYAN</div>
+            <div className="title about-page-big-title">Y. TYAN</div>
             <div className="about-page-image-container">
                 <img
                     className="about-page-image post-img"
@@ -38,7 +38,7 @@ const AboutPage = () => {
             </div>
             <div className="about-page-description-container">
                 <div className="about-page-description">
-                    <span className="text about-page-description-title">
+                    <span className="subtitle about-page-description-title">
                         Обо мне
                     </span>
                     <span className="text about-page-text about-page-description-text">
@@ -46,7 +46,7 @@ const AboutPage = () => {
                     </span>
                 </div>
                 <div className="about-page-skills">
-                    <span className="text about-page-description-title">
+                    <span className="subtitle about-page-description-title">
                         Навыки
                     </span>
                     <ul className="about-page-ul">
@@ -62,8 +62,8 @@ const AboutPage = () => {
                     </ul>
                 </div>
                 <div className="about-page-experience">
-                    <span className="text about-page-description-title">
-                        Профессиональный опыт
+                    <span className="subtitle about-page-description-title">
+                        Проф опыт
                     </span>
                     <ul className="about-page-ul">
                         <li className="text about-page-exp about-page-description-text">
