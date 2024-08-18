@@ -16,7 +16,12 @@
     padding: 25px 5px 30px 25px;
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    .small-post-container {
+        flex-wrap: wrap;
+    }
 }
 
 .small-post-container:hover {

@@ -16,7 +16,7 @@ const HamburgerMenu = () => {
 
 const AppHeader = ({ appTheme, setAppTheme }) => {
     return (
-        <header className="header">
+        <header className="header" id="header">
             <div className={`logo-container`}>
                 <Link to={pages[0].path} className="logo-link">
                     YT VEE

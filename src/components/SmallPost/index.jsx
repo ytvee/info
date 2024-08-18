@@ -1,13 +1,23 @@
 import * as React from "react";
+import { Link } from "gatsby";
+import { getDateName } from "../GalleryItem/meta";
 import "./style.css";
 
-const SmallPost = ({ imageName, date, title, description, link }) => {
+const SmallPost = ({ date, title, description, link, children }) => {
     return (
         <div className="small-post-container">
-            <div className="small-post-image-container">{imageName}</div>
+            <div className="small-post-image-container">
+                <Link to={link} className={`nav-item-link`}>{children}</Link>
+            </div>
             <div className="small-post-info">
-                <div className="subtitle small-post-date-container">{date}</div>
-                <div className="title small-post-title-container">{title}</div>
+                <Link to={link} className={`nav-item-link`}>
+                    <div className="subtitle small-post-date-container">
+                        {getDateName(date)}
+                    </div>
+                    <div className="title small-post-title-container">
+                        {title}
+                    </div>
+                </Link>
                 <div className="text small-post-description-container">
                     {description}
                 </div>

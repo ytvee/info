@@ -1,13 +1,19 @@
 import * as React from "react";
+import { Link } from "gatsby";
+import { getDateName } from "../GalleryItem/meta";
 import "./style.css";
 
-const BigPost = ({ imageName, date, title, description, link }) => {
+const BigPost = ({ date, title, description, link, children }) => {
     return (
         <div className="big-post-container">
-            <div className="big-post-image-container">{imageName}</div>
-            <div className="subtitle big-post-date-container">{date}</div>
-            <div className="title big-post-title-container">{title}</div>
-            <div className="text big-post-description-container">{description}</div>
+            <Link to={link} className={`nav-item-link`}>
+                <div className="big-post-image-container">{children}</div>
+                <div className="subtitle big-post-date-container">{getDateName(date)}</div>
+                <div className="title big-post-title-container">{title}</div>
+            </Link>
+            <div className="text big-post-description-container">
+                {description}
+            </div>
         </div>
     );
 };

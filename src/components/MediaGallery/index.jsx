@@ -13,7 +13,6 @@ const MediaGallery = ({ galleryTitle, posts }) => {
                         postTitle={post.title}
                         description={post.description}
                         link={post.link}
-                        imagePath={post.id}
                     >
                         <div className="media-image-container">
                             <img

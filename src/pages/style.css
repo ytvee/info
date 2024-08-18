@@ -120,6 +120,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: var(--fast-transition);
 }
 
 html,
@@ -128,6 +129,7 @@ body,
 #gatsby-focus-wrapper {
     margin: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -170,7 +172,6 @@ button {
     display: flex;
     gap: 32px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .blog-page-big-title {
@@ -185,7 +186,10 @@ button {
 
 @media (max-width: 800px) {
     .blog-page-big-title {
-        font-size: 85px;
+        font-size: 65px;
+    }
+    .last-posts-gallery {
+        flex-wrap: wrap;
     }
 }
 
@@ -206,4 +210,9 @@ button {
 .blog-gallery::after {
     content: "";
     width: 365px;
+}
+
+.post-image-container img {
+    max-height: 200px;
+    object-fit: cover;
 }

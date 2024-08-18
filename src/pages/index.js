@@ -5,6 +5,7 @@ import GalleryItem from "../components/GalleryItem";
 import BigPost from "../components/BigPost";
 import SmallPost from "../components/SmallPost";
 import { pageLabels } from "../components/AppHeader/meta";
+import { allPostsData } from "./meta";
 import Seo from "../components/seo";
 import "./style.css";
 
@@ -22,33 +23,47 @@ import "./style.css";
 // TODO: выставить transition везде
 
 const IndexPage = ({ data }) => {
-    const postsLength = data.allMdx.nodes.length;
-    const bigPost = data.allMdx.nodes[postsLength - 1];
+    const bigPost = data.allMdx.nodes[0];
     const smallPosts = [
-        data.allMdx.nodes[postsLength - 2],
-        data.allMdx.nodes[postsLength - 3],
+        data.allMdx.nodes[1],
+        data.allMdx.nodes[2],
     ];
+    console.log(smallPosts[0]);
 
     const LastPostsGallery = () => {
         return (
             <div className="last-posts-gallery">
                 <BigPost
-                    imageName={"image"}
                     date={bigPost.frontmatter.date}
                     title={bigPost.frontmatter.title}
                     description={bigPost.excerpt}
-                    link={"link to post here"}
-                />
+                    link={`/blog/${bigPost.frontmatter.slug}`}
+                >
+                    <div className="media-image-container">
+                        <img
+                            className="media-image post-img"
+                            src={allPostsData[bigPost.frontmatter.title]}
+                            alt={"image"}
+                        />
+                    </div>
+                </BigPost>
                 <div className="small-posts-container">
                     {smallPosts.map((post) => (
                         <SmallPost
                             key={post.id}
-                            imageName={"image"}
                             date={post.frontmatter.date}
                             title={post.frontmatter.title}
                             description={post.excerpt}
-                            link={"link to post here"}
-                        />
+                            link={`/blog/${post.frontmatter.slug}`}
+                        >
+                            <div className="post-image-container">
+                                <img
+                                    className="media-image post-img"
+                                    src={allPostsData[post.frontmatter.title]}
+                                    alt={"image"}
+                                />
+                            </div>
+                        </SmallPost>
                     ))}
                 </div>
             </div>
@@ -63,9 +78,7 @@ const IndexPage = ({ data }) => {
                     ПОСЛЕДНИЕ ПОСТЫ
                 </div>
                 <LastPostsGallery />
-                <div className="subtitle blog-page-sub-title">
-                    ВСЕ ПОСТЫ
-                </div>
+                <div className="subtitle blog-page-sub-title">ВСЕ ПОСТЫ</div>
                 <div className="blog-gallery">
                     {data.allMdx.nodes.map((node) => (
                         <GalleryItem
@@ -74,8 +87,16 @@ const IndexPage = ({ data }) => {
                             description={node.excerpt}
                             link={`/blog/${node.frontmatter.slug}`}
                             date={node.frontmatter.date}
-                            target={`_self`}
-                        />
+                            isPost={true}
+                        >
+                            <div className="post-image-container">
+                                <img
+                                    className="media-image post-img"
+                                    src={allPostsData[node.frontmatter.title]}
+                                    alt={"image"}
+                                />
+                            </div>
+                        </GalleryItem>
                     ))}
                 </div>
             </main>
