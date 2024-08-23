@@ -57,3 +57,7 @@
     letter-spacing: 0.2px;
     line-height: 1.4;
 }
+
+.small-post-container:hover .small-post-title-container {
+    color: var(--selection-color);
+}

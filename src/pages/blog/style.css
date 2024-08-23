@@ -24,7 +24,7 @@
     gap: 16px;
     line-height: 30.4px;
     overflow-wrap: break-word;
-    font-kerning: auto;
+    /* font-kerning: auto; */
     font-weight: 400;
 
 }

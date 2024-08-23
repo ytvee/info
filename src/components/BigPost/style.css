@@ -38,3 +38,6 @@
     line-height: 1.4;
 }
 
+.nav-item-link:hover .big-post-title-container {
+    color: var(--selection-color);
+}
