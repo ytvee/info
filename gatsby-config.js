@@ -109,4 +109,5 @@ module.exports = {
             },
         },
     ],
+    pathPrefix: "/yt-blog",
 };
