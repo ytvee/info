@@ -9,17 +9,6 @@ import { allPostsData } from "./meta";
 import Seo from "../components/seo";
 import "./style.css";
 
-// TODO: сделать подсветку текущей страницы сайта в навигации
-// TODO: Собрать семантику запросов для блога
-// TODO: добавить описание в siteMetadata
-// TODO: отрефакторить страницу об авторе
-// TODO: настроить поддержку markdown чтобы были видны списки и цитаты
-// TODO: добавить к посту лайк, комменты, время чтения
-// TODO: написать контент для страницы ОБ АВТОРЕ
-// TODO: Отредактировать контент в "Контакты и медиа"
-// TODO: Деплой
-// TODO: Сделать функционал гамбургер меню
-
 const IndexPage = ({ data }) => {
     const bigPost = data.allMdx.nodes[0];
     const smallPosts = [

@@ -4,8 +4,6 @@ import { pageLabels } from "../../components/AppHeader/meta";
 import Seo from "../../components/seo";
 import "./style.css";
 
-// TODO: refactoring -> decomposition
-
 const avaImagePath =
     "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723193765/";
 const imageKeys = {
