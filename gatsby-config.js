@@ -8,6 +8,10 @@ module.exports = {
             "Гайды по программированию на JavaScript и Python. Образовательные статьи и ссылки.",
         siteUrl: `https://www.ytvee.com`,
     },
+    pathPrefix: "/yt-blog",
+    flags: {
+        DEV_SSR: true
+    },
     plugins: [
         "gatsby-plugin-image",
         "gatsby-transformer-sharp",
@@ -109,5 +113,4 @@ module.exports = {
             },
         },
     ],
-    pathPrefix: "/yt-blog",
 };

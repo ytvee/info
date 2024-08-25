@@ -5,7 +5,7 @@ import GalleryItem from "../components/GalleryItem";
 import BigPost from "../components/BigPost";
 import SmallPost from "../components/SmallPost";
 import { pageLabels } from "../components/AppHeader/meta";
-import { allPostsData } from "./meta";
+import allPostsData from "./meta";
 import Seo from "../components/seo";
 import "./style.css";
 

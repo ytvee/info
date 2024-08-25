@@ -9,7 +9,8 @@ const ContactsForm = () => {
         navigator.clipboard
             .writeText(cta.CONTACT_LINK)
             .then(() => setIsCopied(true));
-        window.setTimeout(() => setIsCopied(false), 500);
+        if (typeof window !== "undefined")
+            window.setTimeout(() => setIsCopied(false), 500);
     }
 
     return (

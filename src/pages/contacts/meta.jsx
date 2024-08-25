@@ -1,4 +1,4 @@
-export const posts = [
+const posts = [
     {
         id: "jasa",
         title: "Jasa Kids",
@@ -27,3 +27,5 @@ export const posts = [
             "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723146146/3_ze46mq.png",
     },
 ];
+
+export default posts;

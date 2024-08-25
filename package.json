@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && hub-pages -d public"
+    "deploy": "gatsby build && main -d public",
+    "predeploy": "gatsby build"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",

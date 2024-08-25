@@ -5,8 +5,10 @@ import { theme } from "../../components/ThemeSwitch";
 import "./style.css";
 
 const DefaultLayout = ({ children }) => {
-    
-    const themeFromLocalStorage = window.localStorage.getItem(theme.KEY);
+    const themeFromLocalStorage =
+        typeof window !== "undefined"
+            ? window.localStorage.getItem(theme.KEY)
+            : theme.LIGHT;
     const [appTheme, setAppTheme] = React.useState(
         themeFromLocalStorage || theme.LIGHT
     );

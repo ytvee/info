@@ -4,7 +4,7 @@ import ContactsForm from "../../components/ContactsForm";
 import MediaGallery from "../../components/MediaGallery";
 import { pageLabels } from "../../components/AppHeader/meta";
 import Seo from "../../components/seo";
-import { posts } from "./meta";
+import posts from "./meta";
 import "./style.css";
 
 const ContactPage = () => {
