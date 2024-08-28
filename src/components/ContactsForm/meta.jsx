@@ -1,11 +1,11 @@
 export const description = {
     LABEL: "Контакты",
-    TITLE: "Напишите мне в Telegram",
-    TEXT: "Вы можете получить от меня аудит проекта, помощь или поддержку в вопросах обучения программированию",
+    TITLE: "Остаемся на связи?",
+    TEXT: "Написать мне - самый простой способ связаться",
 };
 
 export const cta = {
-    START_DESCRIPTION: "Найдите меня в Telegram: ",
+    START_DESCRIPTION: "Скопируйте и найдите в Telegram: ",
     CONTACT_LINK: "@YTvEE",
     END_DESCRIPTION: " или нажмите --> ",
     BUTTON_TEXT: "Написать",

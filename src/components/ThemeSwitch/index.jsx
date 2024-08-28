@@ -10,13 +10,17 @@ export const theme = {
 
 const ThemeSwitch = ({ appTheme, setAppTheme }) => {
     const themeToggle = () => {
+        typeof window !== "undefined" &&
+            window.localStorage.setItem(theme.KEY, JSON.stringify(theme.LIGHT));
+
         if (appTheme === theme.LIGHT) {
-            if (typeof window !== "undefined")
-                window.localStorage.setItem(theme.KEY, theme.DARK);
+            typeof window !== "undefined" &&
+                window.localStorage.setItem(
+                    theme.KEY,
+                    JSON.stringify(theme.DARK)
+                );
             return setAppTheme(theme.DARK);
         }
-        if (typeof window !== "undefined")
-            window.localStorage.setItem(theme.KEY, theme.LIGHT);
         return setAppTheme(theme.LIGHT);
     };
 

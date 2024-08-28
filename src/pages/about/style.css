@@ -47,13 +47,15 @@
 }
 
 .about-page-description-text {
-    /* color: var(--post-text-color); */
     line-height: 1.7;
 }
 
 .about-page-ul {
     padding-top: 12px;
     padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .about-page-exp,

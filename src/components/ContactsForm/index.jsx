@@ -9,9 +9,9 @@ const ContactsForm = () => {
         navigator.clipboard
             .writeText(cta.CONTACT_LINK)
             .then(() => setIsCopied(true));
-        if (typeof window !== "undefined")
+        typeof window !== "undefined" &&
             window.setTimeout(() => setIsCopied(false), 500);
-    }
+    };
 
     return (
         <div className="contacts-container">
@@ -24,7 +24,9 @@ const ContactsForm = () => {
                         Скопировано!
                     </div>
                     {cta.START_DESCRIPTION}
-                    <span className="link" onClick={copyLink}>{cta.CONTACT_LINK}</span>
+                    <span className="link" onClick={copyLink}>
+                        {cta.CONTACT_LINK}
+                    </span>
                     {cta.END_DESCRIPTION}
                 </div>
                 <a href={links.telegram} target="_blank">

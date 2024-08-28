@@ -6,9 +6,8 @@ import "./style.css";
 
 const DefaultLayout = ({ children }) => {
     const themeFromLocalStorage =
-        typeof window !== "undefined"
-            ? window.localStorage.getItem(theme.KEY)
-            : theme.LIGHT;
+        typeof window !== "undefined" &&
+        JSON.parse(window.localStorage.getItem(theme.KEY));
     const [appTheme, setAppTheme] = React.useState(
         themeFromLocalStorage || theme.LIGHT
     );

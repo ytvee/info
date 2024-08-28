@@ -24,6 +24,12 @@
     }
 }
 
+@media (max-width: 615px) {
+    .small-post-container {
+        justify-content: center;
+    }
+}
+
 .small-post-container:hover {
     opacity: 0.85;
     box-shadow: 0 0 14px var(--sub-title-color);
@@ -35,9 +41,21 @@
     min-height: 100px;
 }
 
+@media (max-width: 615px) {
+    .small-post-image-container {
+        width: 100%;
+    }
+}
+
 .small-post-info {
     min-width: 205px;
     width: 50%;
+}
+
+@media (max-width: 615px) {
+    .small-post-info {
+        width: 100%;
+    }
 }
 
 .small-post-date-container {
