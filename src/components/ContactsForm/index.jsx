@@ -6,9 +6,8 @@ const ContactsForm = () => {
     const [isCopied, setIsCopied] = React.useState(false);
 
     const copyLink = () => {
-        navigator.clipboard
-            .writeText(cta.CONTACT_LINK)
-            .then(() => setIsCopied(true));
+        navigator.clipboard.writeText(cta.CONTACT_LINK);
+        setIsCopied(true);
         typeof window !== "undefined" &&
             window.setTimeout(() => setIsCopied(false), 500);
     };

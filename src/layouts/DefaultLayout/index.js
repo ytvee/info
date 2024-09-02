@@ -5,12 +5,21 @@ import { theme } from "../../components/ThemeSwitch";
 import "./style.css";
 
 const DefaultLayout = ({ children }) => {
-    const themeFromLocalStorage =
-        typeof window !== "undefined" &&
-        JSON.parse(window.localStorage.getItem(theme.KEY));
+    
+        // typeof window !== "undefined" &&
+        
     const [appTheme, setAppTheme] = React.useState(
-        themeFromLocalStorage || theme.LIGHT
+        null
     );
+
+    console.log("current theme from storage:", appTheme)
+
+    React.useEffect(() => {
+        const themeFromLocalStorage = typeof window !== "undefined" && window.localStorage.getItem(theme.KEY);
+        if (themeFromLocalStorage) {
+            setAppTheme(themeFromLocalStorage)
+        }
+    }, [appTheme])
 
     return (
         <div className={`container ${appTheme}`}>
