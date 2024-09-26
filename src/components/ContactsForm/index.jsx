@@ -25,7 +25,7 @@ const ContactsForm = () => {
                     </div>
                     {cta.START_DESCRIPTION}
                     <span className="link" onClick={copyLink}>
-                        {cta.CONTACT_LINK}
+                        <span className="a-dog">@</span>{cta.CONTACT_LINK.slice(1)}
                     </span>
                     {cta.END_DESCRIPTION}
                 </div>

@@ -12,7 +12,7 @@ const AppHeader = () => {
     const pages = pathList.slice(1, pathList.length - 1);
     const [isMenuExtended, setIsMenuExtended] = useState(false);
 
-    const toggleMenu = (event) => {
+    const openMenu = (event) => {
         event.stopPropagation();
         setIsMenuExtended(!isMenuExtended);
         document.addEventListener("click", closeMenu);
@@ -25,7 +25,7 @@ const AppHeader = () => {
 
     const HamburgerMenu = () => {
         return (
-            <div className={`hamburger ${isMenuExtended ? "extended" : ""}`} onClick={toggleMenu}>
+            <div className={`hamburger ${isMenuExtended ? "extended" : ""}`} onClick={openMenu}>
                 <div className="hamburger-line"></div>
                 <div className="hamburger-line"></div>
                 <div className="hamburger-line"></div>
@@ -38,8 +38,8 @@ const AppHeader = () => {
             <div className={`extended-menu-container ${isMenuExtended ? "show" : "hide"}`}>
                 <ul className="extended-nav">
                     {pages.map((page) => (
-                        <li className="extended-nav-item" key={page.id}>
-                            <Link to={`${page.path}`} className="extended-nav-link" onClick={toggleMenu}>
+                        <li className="extended-nav-item" key={page.id}  onClick={closeMenu}>
+                            <Link to={`${page.path}`} className="extended-nav-link">
                                 {page.label}
                             </Link>
                         </li>
