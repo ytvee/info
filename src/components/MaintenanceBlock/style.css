@@ -1,0 +1,8 @@
+.maintenance-container {
+    /* width: 100%; */
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+    font-size: 26px;
+    color: var(--title-color);
+}
