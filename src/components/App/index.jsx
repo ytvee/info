@@ -4,6 +4,10 @@ import MainRouter from "../../router";
 import "../../domains/Theme/style.css";
 import "./style.css";
 
+// TODO: добавить фавикон
+// TODO: настроить seo
+// TODO: блог
+
 const App = () => {
     const appTheme = useSelector((state) => state.application.currentTheme);
 
