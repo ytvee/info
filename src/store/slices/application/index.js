@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { defaultTheme, themes } from "../../../domains/Theme";
+import { defaultTheme } from "../../../domains/Theme";
 import LocalStorage from "../../../services/localStorageService";
 import { storageKeys } from "../../../utils/appConstants";
 

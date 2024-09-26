@@ -11,7 +11,7 @@ const AppFooter = () => {
             <div className="footer-links-container">
                 {socialLinks.map((link) => (
                     <div className="footer-links" key={link.link}>
-                        <a href={link.link} target="_blank">
+                        <a href={link.link} target="_blank" rel="noreferrer">
                             {link.label}
                         </a>
                     </div>

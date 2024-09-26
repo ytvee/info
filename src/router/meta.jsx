@@ -1,4 +1,4 @@
-import Landing from "../pages/Landing";
+// import Landing from "../pages/Landing";
 import Blog from "../pages/Blog";
 import About from "../pages/About";
 import Contacts from "../pages/Contacts";

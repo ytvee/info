@@ -35,6 +35,7 @@ const About = () => {
                 <img
                     className="about-page-image post-img"
                     src={avaImagePath + currentImage + ".png"}
+                    alt={currentImage}
                     onClick={avaImageToggle}
                 />
             </div>
