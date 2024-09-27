@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { description, cta, links } from "./meta";
+// import { description, cta, links } from "./meta";
+import { description, cta, links } from "../../utils/constants";
 import "./style.css";
 
 const ContactsForm = () => {
@@ -29,7 +30,7 @@ const ContactsForm = () => {
                     </span>
                     {cta.END_DESCRIPTION}
                 </div>
-                <a href={links.telegram} target="_blank" rel="noreferrer">
+                <a href={links.TELEGRAM} target="_blank" rel="noreferrer">
                     <button className="standard-button">
                         {cta.BUTTON_TEXT}
                     </button>

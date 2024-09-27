@@ -40,6 +40,7 @@
     padding-bottom: 25px;
     color: var(--description-post-color);
     font-size: var(--tooltip-font-size);
+    /* font-family: var(--text-font-family); */
     user-select: none;
 }
 
@@ -51,10 +52,11 @@
 .link {
     text-decoration: underline;
     text-underline-offset: 5px;
-    font-family: var(--title-font-family);
+    font-family: var(--text-font-family);
 }
 
-.link:hover {
+.link:hover,
+.link:hover .a-dog {
     color: var(--button-hover-color);
     cursor: pointer;
 }
@@ -113,7 +115,7 @@
 
 .contacts-label,
 .contacts-description,
-.contacts-clickable-text,
+/* .contacts-clickable-text, */
 .tooltip,
 .standard-button {
     font-family: var(--text-font-family);

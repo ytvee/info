@@ -12,13 +12,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    text-decoration: none;
+    font-size: var(--nav-item-text-size);
+    font-family: var(--text-font-family);
+    color: var(--nav-item-color);
+    user-select: none;
 }
 
 .footer-information,
 .footer-links a,
 .footer-links a:visited {
     text-decoration: none;
-    font-size: var(--nav-item-text-size);
     color: var(--nav-item-color);
     user-select: none;
 }
