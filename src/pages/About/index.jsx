@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
+import MediaGallery from "../../components/MediaGallery";
+import { mediaCards } from "../../utils/constants";
 import { avaImagePath, imageKeys } from "../../utils/appConstants";
 import {
     descriptionTextAbout,
@@ -7,8 +9,6 @@ import {
     skillsDescription,
 } from "../../utils/constants";
 import "./style.css";
-
-//TODO: все svg спрайты переделать на спрайты в public
 
 const About = () => {
     const [currentImage, setCurrentImage] = useState(imageKeys.GREY);
@@ -57,7 +57,7 @@ const About = () => {
         return (
             <div className="about-page-experience">
                 <span className="subtitle about-page-description-title">
-                    Проф опыт
+                    Карьера
                 </span>
                 <ul className="about-page-ul">
                     {workingExperience.map((item) => (
@@ -82,12 +82,18 @@ const About = () => {
                     src={avaImagePath + currentImage + ".png"}
                     alt={currentImage}
                     onClick={avaImageToggle}
+                    onMouseLeave={avaImageToggle}
+                    onMouseEnter={avaImageToggle}
                 />
             </div>
             <div className="about-page-description-container">
                 <AboutBlock />
                 <SkillsBlock />
                 <ExperienceBlock />
+                <MediaGallery
+                    galleryTitle={"Медиа-проекты с моим участием"}
+                    posts={mediaCards}
+                />
             </div>
         </DefaultLayout>
     );

@@ -1,6 +1,6 @@
 export const storageKeys = {
     theme: "theme",
-}
+};
 
 export const avaImagePath =
     "https://res.cloudinary.com/duyqvi0ig/image/upload/v1723193765/";

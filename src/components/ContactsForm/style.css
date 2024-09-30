@@ -40,7 +40,6 @@
     padding-bottom: 25px;
     color: var(--description-post-color);
     font-size: var(--tooltip-font-size);
-    /* font-family: var(--text-font-family); */
     user-select: none;
 }
 

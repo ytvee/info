@@ -20,7 +20,5 @@ export const applicationSlice = createSlice({
     },
 });
 
-export const {
-    setCurrentTheme,
-} = applicationSlice.actions;
+export const { setCurrentTheme } = applicationSlice.actions;
 export default applicationSlice.reducer;

@@ -39,6 +39,7 @@
     font-size: var(--nav-item-text-size);
     text-decoration: none;
     color: var(--nav-item-color);
+    font-family: var(--text-font-family);
 }
 
 .nav-item:hover {
@@ -91,7 +92,7 @@
     .hamburger.extended .hamburger-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .hamburger.extended .hamburger-line:nth-child(2) {
         opacity: 0;
     }
@@ -174,6 +175,7 @@
 .extended-nav-item {
     margin: 10px 0;
     cursor: pointer;
+    font-family: var(--text-font-family);
 }
 
 .extended-nav-item:hover {
@@ -181,6 +183,7 @@
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
 .extended-nav-item:active {
     color: var(--nav-item-active-color);
 }

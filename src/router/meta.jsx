@@ -1,65 +1,48 @@
-// import Landing from "../pages/Landing";
-import Blog from "../pages/Blog";
+import Service from "../pages/Service";
 import About from "../pages/About";
 import Contacts from "../pages/Contacts";
 import NotFound from "../pages/NotFound";
 
 export const paths = {
-	HOME: {
-		id: "Landing",
-		path: "/",
+    HOME: {
+        id: "Home",
+        path: "/",
         label: "Главная",
-	},
-	BLOG: {
-		id: "Blog",
-		path: "/blog",
-        label: "Блог",
-	},
-	ABOUT: {
-		id: "About",
-        path: "/about",
-        label: "Об авторе",
-	},
-    CONTACTS_MEDIA: {
-		id: "ContactsMedia",
-        path: "/contacts-media",
-        label: "Связь и медиа",
-	},
+    },
+    SERVICE: {
+        id: "Service",
+        path: "/service",
+        label: "Услуги",
+    },
+    CONTACTS: {
+        id: "Contacts",
+        path: "/contacts",
+        label: "Контакты",
+    },
     NOT_FOUND: {
-		id: "notFound",
+        id: "notFound",
         path: "*",
         label: "notFound",
-	},
-    
-}
+    },
+};
 
 const routes = [
     {
         ...paths.HOME,
         element: <About />,
     },
-    // {
-    //     ...paths.HOME,
-    //     element: <Landing />,
-    // },
-    
     {
-        ...paths.BLOG,
-        element: <Blog />,
+        ...paths.SERVICE,
+        element: <Service />,
     },
     {
-        ...paths.ABOUT,
-        element: <About />,
-    },
-    {
-        ...paths.CONTACTS_MEDIA,
+        ...paths.CONTACTS,
         element: <Contacts />,
     },
     {
         ...paths.NOT_FOUND,
         element: <NotFound />,
     },
-    
 ];
 
 export default routes;

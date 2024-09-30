@@ -1,0 +1,20 @@
+.service-wrapper {
+    max-width: 1200px;
+}
+
+.service-description-container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: var(--post-text-font-size);
+}
+
+.service-description-container .gallery-container {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.service-description-container .gallery-container .gallery-content {
+    text-align: left;
+    justify-content: flex-start;
+}

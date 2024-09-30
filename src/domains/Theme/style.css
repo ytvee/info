@@ -61,6 +61,7 @@
     --selection-color: #F2522E;
 
     --background-color: #F2F2F2;
+    --title-gradient: linear-gradient(90deg, #7F56D9, #F2522E);
     --title-color: #181D26;
     --sub-title-color: #F2522E;
     --logo-color: #F2CB05;
@@ -93,6 +94,7 @@
     --selection-color: #D9B3F2;
 
     --background-color: #181D26;
+    --title-gradient: linear-gradient(90deg, #7F56D9, #80FFEA);
     --title-color: #F2F2F2;
     --sub-title-color: #D9B3F2;
     --logo-color: #F2CB57;
@@ -136,6 +138,11 @@ body {
 ::selection {
     background: var(--selection-color);
     color: var(--background-color);
+    /* background: var(--title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; */
 }
 
 button {
@@ -143,7 +150,12 @@ button {
 }
 
 .title {
-    color: var(--title-color);
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    user-select: none;
 }
 
 .subtitle {

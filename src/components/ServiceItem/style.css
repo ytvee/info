@@ -1,0 +1,42 @@
+.service-container {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.service-item {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    user-select: none;
+}
+
+.service-item img {
+    max-width: 990px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    width: 100%;
+    font-size: var(--subtitle-font-size);
+    font-weight: 600;
+}
+
+.service-sub-title {
+    font-family: var(--text-font-family);
+    font-size: var(--post-text-font-size);
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+
+.service-text-content {
+    max-width: 770px;
+    font-family: var(--text-font-family);
+    font-size: 18px;
+}

@@ -63,7 +63,7 @@ export const cta = {
 };
 
 export const descriptionTextAbout =
-    "Мне нравится создавать структуры и функциональные, эстетически привлекательные интерфейсы. Изучаю Web3 и нейросети. В свободное время увлекаюсь музыкой, катаю на борде, играю в настолки и путешествую. Жизнь полна увлекательных открытий!";
+    "Меня зовут Евгений Тян. Люблю создавать структуры и функциональные, эстетически привлекательные интерфейсы. Изучаю Web3 и нейросети. В свободное время увлекаюсь музыкой, катаю на борде, играю в настолки и путешествую. Жизнь полна увлекательных открытий!";
 
 export const workingExperience = [
     "Singularity Net [с окт 2023] / Frontend-разработчик. Разработка интерфейсов для blockchain-сервисов. React.js, Vue.js, Web3",
@@ -78,4 +78,103 @@ export const skillsDescription = [
     "JavaScript, TypeScript, React.js, Next.js, Vue3.js",
     "Python, Telegram API, C#, .NET, ASP.NET, MS SQL Server, PostgreSQL",
     "Bootstrap, Material-UI, Git, Jira, Trello",
+];
+
+export const serviceMeta = [
+    {
+        id: "tildaDev",
+        title: "Сайты на платфоре Tilda",
+        subTitle: "Быстро, привлекательно и функционально",
+        description:
+            "От лендингов до интернет-магазинов – полный цикл разработки, удобство использования и высокая конверсия. Индивидуальные решения под ключ, которые привлекают клиентов и помогают вашему бренду выделиться среди конкурентов. Подключение CRM для сбора заявок и базовая SEO-оптимизация.",
+        imagePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727708181/tildadev_vfyvxk.svg",
+        imageMobilePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727709569/tildaMobile_fnlxla.svg",
+    },
+    {
+        id: "fullDev",
+        title: "Разработка под ключ Backend | Frontend | Дизайн",
+        subTitle: "Качественно не(!) быстро, надежно, с поддержкой",
+        description:
+            "Надежные и продуманные решения, уделяем внимание каждой детали. Здесь нет места спешке – только качественная работа, проверенная временем и опытом. Гарантируем стабильную поддержку на каждом этапе проекта и после запуска. Инвестируйте в проект, который будет работать на ваш бизнес без сбоев и лишних забот.",
+        imagePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727708181/fulldev_u5bdss.svg",
+        imageMobilePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727709569/fulldevMobile_xh4xqu.svg",
+    },
+    {
+        id: "botsDev",
+        title: "Чат-боты и Mini-App для Telegram",
+        subTitle: "Разработка | Доработка | Аудит",
+        description:
+            "Эффективные чат-боты и Mini-App для Telegram с нуля. Также, улучшаем уже существующие проекты. От глубокого аудита до полного рефакторинга – приводим в порядок любые решения и обеспечиваем их стабильную работу. Гарантируем функциональность, удобство и поддержку на всех этапах работы.",
+        imagePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727708181/botsdev_omplmp.svg",
+        imageMobilePath:
+            "https://res.cloudinary.com/duyqvi0ig/image/upload/v1727709569/botsdevMobile_qambe9.svg",
+    },
+];
+
+export const portfolioMeta = [
+    {
+        id: "tgBotDkp",
+        title: "Корпоративный сайт",
+        subTitle: "для студии дизайна интерьеров",
+        description:
+            "Сайт собран на платформе Tilda с кастомными скриптами. Настроена CRM для сбора заявок. Выполнена базовая SEO-оптимизация.",
+        imagePath: "",
+        link: "https://startstudio.kz/",
+        tags: ["Tilda", "Web", "Корпоративный сайт"],
+    },
+    {
+        id: "wroldOfDogsBot",
+        title: "Игровой бот",
+        subTitle: "World Of Dogs",
+        description:
+            "Игра была запущена в далеком 2018 в мои студенческие годы. За год она стала самой популярной текстовой RPG и в пик своей активности у нее было 10тыс активных игроков.",
+        imagePath: "",
+        link: "https://t.me/WorldDogs_bot",
+        tags: ["Чат-бот", "Telegram", "Игра"],
+    },
+    {
+        id: "DKP",
+        title: "Бот консультант",
+        subTitle: "ДКП Support - для центра СПИД в г. Алматы",
+        description:
+            "Информационный чат-бот с возможностью проходить тесты. Также, реализована панель администратора с аналитикой активности бота, пользовательской рассылкой и установкой регулярных напоминаний пользователям о приёме лекарств.",
+        imagePath: "",
+        link: "https://t.me/DkpAlmatybot",
+        tags: ["Telegram", "Чат-бот", "Интерактивный бот"],
+    },
+    {
+        id: "RaulWeb",
+        title: "Сайт-визитка",
+        subTitle: "для фитнес-тренера и коуча по личностному росту",
+        description:
+            "Сайт собран на платформе Tilda. Настроена CRM для сбора заявок. Выполнена базовая SEO-оптимизация.",
+        imagePath: "",
+        link: "https://rmflow.kz/",
+        tags: ["Tilda", "Сайт-визитка", "Web"],
+    },
+    {
+        id: "DKP Migrant",
+        title: "Telegram чат-бот",
+        subTitle: "ДКП Казахстан - еще 1 проект для центра СПИД в г. Алматы",
+        description:
+            "Информационный чат-бот, направленный на информирование мигрантов, с возможностью проходить тесты. Также, реализована панель администратора с аналитикой активности бота, пользовательской рассылкой и установкой регулярных напоминаний пользователям о приёме лекарств.",
+        imagePath: "",
+        link: "https://t.me/dkpmigranbot",
+        tags: ["Telegram", "Информационный бот", "Чат-бот"],
+    },
+    {
+        id: "DubaiNews",
+        title: "Новостной бот",
+        subTitle: "для русскоязычного канала в Дубае https://t.me/dubaimap",
+        description:
+            "Бот принимает новости от пользователей, отправляет на проверку администраторам и после валидации, публикует в канал новостей в заданные дату и время.",
+        imagePath: "",
+        link: "https://t.me/Dubaimapbot",
+        tags: ["Чат-бот", "Telegram", "Чатт-бот"],
+    },
 ];

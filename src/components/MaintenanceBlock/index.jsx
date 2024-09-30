@@ -3,7 +3,9 @@ import "./style.css";
 
 const MaintenanceBlock = () => {
     return (
-        <div className="maintenance-container">Страница в разработке и пока недоступна.</div>
+        <div className="maintenance-container">
+            Страница в разработке и пока недоступна.
+        </div>
     );
 };
 

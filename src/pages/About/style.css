@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 102px;
     font-size: var(--post-text-font-size);
 }
 
@@ -48,7 +48,6 @@
 }
 
 .about-page-description-text {
-    /* color: var(--post-text-color); */
     line-height: 1.7;
 }
 

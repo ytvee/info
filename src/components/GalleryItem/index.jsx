@@ -34,6 +34,7 @@ const getLinkedContent = (isPost, postTitle, link, children) => {
 
 const GalleryItem = ({
     postTitle,
+    subtitle = "",
     description,
     link,
     date = null,
@@ -48,6 +49,7 @@ const GalleryItem = ({
             </div>
             <div className="subtitle item-date-container">
                 {date && "Дата: " + getDateName(date)}
+                {subtitle && subtitle}
             </div>
         </div>
     );

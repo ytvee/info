@@ -11,6 +11,7 @@ const MediaGallery = ({ galleryTitle, posts }) => {
                     <GalleryItem
                         key={post.id}
                         postTitle={post.title}
+                        subtitle={post.subTitle}
                         description={post.description}
                         link={post.link}
                     >

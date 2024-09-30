@@ -4,12 +4,9 @@ import ThemeSwitch from "../ThemeSwitch";
 import { paths } from "../../router/meta";
 import "./style.css";
 
-// TODO: fix hamburger active:animation
-// TODO: add transition to show extended menu
-
 const AppHeader = () => {
     const pathList = Object.values(paths);
-    const pages = pathList.slice(1, pathList.length - 1);
+    const pages = pathList.slice(0, pathList.length - 1);
     const [isMenuExtended, setIsMenuExtended] = useState(false);
 
     const openMenu = (event) => {
@@ -21,11 +18,14 @@ const AppHeader = () => {
     const closeMenu = () => {
         setIsMenuExtended(false);
         document.removeEventListener("click", closeMenu);
-    }
+    };
 
     const HamburgerMenu = () => {
         return (
-            <div className={`hamburger ${isMenuExtended ? "extended" : ""}`} onClick={openMenu}>
+            <div
+                className={`hamburger ${isMenuExtended ? "extended" : ""}`}
+                onClick={openMenu}
+            >
                 <div className="hamburger-line"></div>
                 <div className="hamburger-line"></div>
                 <div className="hamburger-line"></div>
@@ -35,11 +35,20 @@ const AppHeader = () => {
 
     const ExtendedMenu = () => {
         return (
-            <div className={`extended-menu-container ${isMenuExtended ? "show" : "hide"}`}>
+            <div
+                className={`extended-menu-container ${isMenuExtended ? "show" : "hide"}`}
+            >
                 <ul className="extended-nav">
                     {pages.map((page) => (
-                        <li className="extended-nav-item" key={page.id}  onClick={closeMenu}>
-                            <Link to={`${page.path}`} className="extended-nav-link">
+                        <li
+                            className="extended-nav-item"
+                            key={page.id}
+                            onClick={closeMenu}
+                        >
+                            <Link
+                                to={`${page.path}`}
+                                className="extended-nav-link"
+                            >
                                 {page.label}
                             </Link>
                         </li>
@@ -54,7 +63,7 @@ const AppHeader = () => {
         <header className="header" id="header">
             <div className="logo-container">
                 <Link to={paths.HOME.path} className="logo-link">
-                    YT VEE
+                    YT DEV
                 </Link>
             </div>
             <ul className="nav-container">

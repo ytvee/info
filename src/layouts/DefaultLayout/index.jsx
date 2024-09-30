@@ -4,7 +4,6 @@ import AppFooter from "../../components/AppFooter";
 import "./style.css";
 
 const DefaultLayout = ({ children }) => {
-
     return (
         <div className={`container`}>
             <AppHeader />

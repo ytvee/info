@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { description, cta, links } from "./meta";
 import { description, cta, links } from "../../utils/constants";
 import "./style.css";
 
@@ -26,7 +25,8 @@ const ContactsForm = () => {
                     </div>
                     {cta.START_DESCRIPTION}
                     <span className="link" onClick={copyLink}>
-                        <span className="a-dog">@</span>{cta.CONTACT_LINK.slice(1)}
+                        <span className="a-dog">@</span>
+                        {cta.CONTACT_LINK.slice(1)}
                     </span>
                     {cta.END_DESCRIPTION}
                 </div>
