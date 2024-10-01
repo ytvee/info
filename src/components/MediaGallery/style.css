@@ -23,9 +23,6 @@
 }
 
 @media (max-width: 1025px) {
-    .gallery-title {
-        text-align: center;
-    }
 
     .gallery-content {
         display: flex;
