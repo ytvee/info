@@ -1,14 +1,16 @@
 .service-container {
     margin-top: 80px;
     display: flex;
-    gap: 80px;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
     width: 100%;
 }
 
 .service-item {
+    padding: 15px;
+    max-width: 500px;
     width: 100%;
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -17,15 +19,16 @@
 }
 
 .service-item img {
-    max-width: 990px;
-    width: 100%;
-    margin-bottom: 20px;
+    width: 100px;
 }
 
 .service-title {
+    
     width: 100%;
     font-size: var(--subtitle-font-size);
     font-weight: 600;
+    display: flex;
+    gap: 20px;
 }
 
 .service-sub-title {

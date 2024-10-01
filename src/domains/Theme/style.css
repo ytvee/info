@@ -11,7 +11,7 @@
     --background-color: #F2F2F2;
     --title-color: #181D26;
     --sub-title-color: #F2522E;
-    --logo-color: #F2CB05;
+    --logo-color: #F2522E;
     --nav-item-color: #181D26;
 
     --title-post-color: #181D26;
@@ -25,7 +25,7 @@
     --button-active-color: #F2CB57;
     --button-text-color-hover: #181D26;
 
-    --logo-hover-color: #F2522E;
+    --logo-hover-color: #F2CB05;
     --logo-active-color: #F2CB57;
 
     --post-hover-color: #F2522E;
@@ -64,7 +64,7 @@
     --title-gradient: linear-gradient(90deg, #7F56D9, #F2522E);
     --title-color: #181D26;
     --sub-title-color: #F2522E;
-    --logo-color: #F2CB05;
+    /* --logo-color: #F2CB05; */
     --nav-item-color: #181D26;
 
     --title-post-color: #181D26;
@@ -78,8 +78,8 @@
     --button-active-color: #F2CB57;
     --button-text-color-hover: #181D26;
 
-    --logo-hover-color: #F2522E;
-    --logo-active-color: #F2CB57;
+    /* --logo-hover-color: #F2522E; */
+    /* --logo-active-color: #F2CB57; */
 
     --post-hover-color: #F2522E;
     --post-active-color: #F2CB57;
@@ -97,7 +97,7 @@
     --title-gradient: linear-gradient(90deg, #7F56D9, #80FFEA);
     --title-color: #F2F2F2;
     --sub-title-color: #D9B3F2;
-    --logo-color: #F2CB57;
+    /* --logo-color: #F2522E; */
     --nav-item-color: #F2F2F2;
 
     --title-post-color: #F2F2F2;
@@ -111,7 +111,7 @@
     --button-active-color: #5F1BF2;
     --button-text-color-hover: #D0D7E1;
 
-    --logo-hover-color: #F2522E;
+    /* --logo-hover-color: #F2CB57; */
     --logo-active-color: #5F1BF2;
 
     --post-hover-color: #D9B3F2;

@@ -11,12 +11,8 @@ const Service = () => {
             <div className="service-wrapper">
                 <div className="title about-page-big-title">YT DEV</div>
                 <div className="service-description-container">
-                    <div className="contacts-label">
-                        Разрабатываем с командой
-                    </div>
-                    <div className="contacts-title">Веб-сервисы | сайты</div>
                     <div className="contacts-title">
-                        чат-ботов | mini-App для Telegram
+                        Работаем с командой
                     </div>
                     <ServiceItem />
                     <MediaGallery

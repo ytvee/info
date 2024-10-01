@@ -18,3 +18,9 @@
     text-align: left;
     justify-content: flex-start;
 }
+
+.service-wrapper .contacts-title,
+.service-wrapper .contacts-label {
+    text-align: left;
+}
+
