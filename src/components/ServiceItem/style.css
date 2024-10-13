@@ -8,7 +8,7 @@
 }
 
 .service-item {
-    padding: 15px;
+    padding: 15px 15px 15px 0;
     max-width: 500px;
     width: 100%;
     display: flex;
@@ -23,12 +23,22 @@
 }
 
 .service-title {
-    
     width: 100%;
     font-size: var(--subtitle-font-size);
     font-weight: 600;
     display: flex;
     gap: 20px;
+}
+
+@media (max-width: 570px) {
+    .service-title {
+        flex-wrap: wrap;
+    }
+    .service-title img {
+        max-width: 150px;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 .service-sub-title {
