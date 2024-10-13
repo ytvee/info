@@ -6,6 +6,7 @@ import { avaImagePath, imageKeys } from "../../utils/appConstants";
 import {
     descriptionTextAbout,
     workingExperience,
+    linkedWorkingExperience,
     skillsDescription,
 } from "../../utils/constants";
 import "./style.css";
@@ -68,6 +69,16 @@ const About = () => {
                             {item}
                         </li>
                     ))}
+                    <li className="text about-page-exp about-page-description-text">
+                        <a
+                            className="text-link"
+                            href={linkedWorkingExperience.link}
+                            target="_blank"
+                        >
+                            {linkedWorkingExperience.intro}
+                        </a>
+                        {linkedWorkingExperience.label}
+                    </li>
                 </ul>
             </div>
         );

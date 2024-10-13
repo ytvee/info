@@ -71,8 +71,13 @@ export const workingExperience = [
     "xCritical Software [фев 2019 - янв 2020] / Backend-разработчик. Разработка CRM-систем. ASP.NET C#",
     "Freelance [авг 2018 - мар 2019] / Backend-разработчик. Разработка чат-ботов для Telegram. Python, PostgreSQL, Docker",
     "Lab of the Future [сен 2014 - авг 2015] / Backend-разработчик. Работа в IBM Domino. Lotus Script",
-    "EduTech [паузы между работой и свбодное время] / 10 лет в сумме обучал программированию и алгоритмизации школьников и студентов. Писал методический материал для школ программирования",
 ];
+
+export const linkedWorkingExperience = {
+    link: "https://quartz-snowstorm-eeb.notion.site/11d858d56d1d80e98179e30d94746836?pvs=4",
+    intro: "EduTech [паузы между работой и свбодное время] / 10 лет в сумме обучал программированию и алгоритмизации школьников и студентов.",
+    label: "Писал методический материал для школ программирования",
+};
 
 export const skillsDescription = [
     "JavaScript, TypeScript, React.js, Next.js, Vue3.js",

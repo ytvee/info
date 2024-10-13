@@ -69,3 +69,7 @@
     letter-spacing: 0.2px;
     line-height: 1.4;
 }
+
+.text-link {
+    color: var(--selection-color);
+}
